@@ -1,0 +1,25 @@
+{
+  "name": "oss-script",
+  "version": "1.0.0",
+  "description": "oss buckets object name diff script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fe-hunk/oss-script.git"
+  },
+  "author": "1152015013@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fe-hunk/oss-script/issues"
+  },
+  "homepage": "https://github.com/fe-hunk/oss-script#readme",
+  "dependencies": {
+    "ali-oss": "^6.1.1"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.2"
+  }
+}
