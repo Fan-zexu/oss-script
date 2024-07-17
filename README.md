@@ -1,6 +1,6 @@
 # oss-script
 
-## 功能描述
+## 功能描述
 
 用于对比2个bucket中同名但内容不同的文件
 
@@ -12,16 +12,32 @@
 
 如果对比期间因网络原因导致任务终止，则会记录当前对比位置信息，方便之后继续执行脚本。
 
+## 使用说明
+
+1. 设置环境变量：
+   ```sh
+   export ORIGIN_REGION=<origin-region>
+   export ACCESS_KEY_ID=<access-key-id>
+   export ACCESS_KEY_SECRET=<access-key-secret>
+   export ORIGIN_BUCKET=<origin-bucket>
+   export TARGET_REGION=<target-region>
+   export TARGET_BUCKET=<target-bucket>
+   export TARGET_ENDPOINT=<target-endpoint>
+   ```
+
+2. 运行Go程序：
+   ```sh
+   go run main.go
+   ```
+
 ## 变量说明
 
 名称 | 描述
 --- | ---
-accessKeyId | RAM账号
-accessKeySecret | RAM密码
-originBucket | 源bucket名称
-originRegion | 源bucket区域
-targetBucket | 目标bucket名称
-targetRegion | 目标bucket区域
-targetEndpoint | 目标bucket域名
-marker | 分页标记
-max-keys | 返回文件最大数量 0-1000
+ACCESS_KEY_ID | RAM账号
+ACCESS_KEY_SECRET | RAM密码
+ORIGIN_BUCKET | 源bucket名称
+ORIGIN_REGION | 源bucket区域
+TARGET_BUCKET | 目标bucket名称
+TARGET_REGION | 目标bucket区域
+TARGET_ENDPOINT | 目标bucket域名

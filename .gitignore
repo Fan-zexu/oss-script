@@ -1,5 +1,4 @@
 .DS_Store
-node_modules
 config.js
 data.txt
 
@@ -10,3 +9,7 @@ data.txt
 *.njsproj
 *.sln
 *.sw?
+data.txt
+*.exe
+*.out
+*.log
